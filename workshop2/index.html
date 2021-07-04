@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <script src="app.js"></script>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="/save-product" method="POST">
+        <div class="row">
+          <div class="col-25">
+            <label for="bookid" id="bookid">Book Id</label>
+          </div>
+          <div class="col-75">
+            <input type="text" name="bookid" placeholder="book id.." />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="title">Title</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="book title.."
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="title">ISBN</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="isbn"
+              name="isbn"
+              placeholder="book ISBN .."
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="title">Published Date</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="publishDate"
+              name="publishDate"
+              placeholder="publish Date .."
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="title">Author</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="author"
+              name="author"
+              placeholder="author name .."
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <input type="submit" value="Submit" id="button" />
+        </div>
+      </form>
+    </div>
+    <table style="width: 100%">
+      <caption>
+        Books List
+      </caption>
+      <tr>
+        <th >ID</th>
+        <th >Title</th>
+        <th >ISBN</th>
+        <th >Publish Date</th>
+        <th >Author</th>
+      </tr>
+      <tr>
+        <td class="allBooks1"></td>
+        <td class="allBooks2"></td>
+        <td class="allBooks3"></td>
+        <td class="allBooks4"></td>
+        <td class="allBooks5"></td>
+      </tr>
+
+    </table>
+  </body>
+</html>
